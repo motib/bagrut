@@ -1,0 +1,15 @@
+﻿all/tikz
+probability/tikz
+*.bat
+*.zip
+*~
+*.aux
+*.log
+*.auxlock
+*.bbl
+*.blg
+*.synctex.gz
+*.toc
+*.docx
+*.txt
+*.out

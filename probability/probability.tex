@@ -1,0 +1,88 @@
+% !TeX root = probability.tex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[12pt,a4paper,leqno]{article}
+
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{bm}
+
+\graphicspath{{../images/}}
+
+% TikZ package
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,shapes}
+\tikzset {>=Stealth}
+
+% Polyglossia Hebrew (main) and English (other)
+\usepackage{polyglossia}  
+\setmainlanguage{hebrew}
+\setotherlanguage{english}
+
+% Fonts: David for Hebrew, Palatino/Courier for English
+\newfontfamily{\hebrewfont}{David}[Script=Hebrew]
+\newfontfamily{\englishfont}{Palatino Linotype}
+\newfontfamily{\englishfonttt}{Courier New}
+\newfontfamily{\hebrewfonttt}{Courier New}
+
+% Abbreviations for backwards compatibility with babel
+\renewcommand*{\L}[1]{\textenglish{\small #1}}
+\newcommand*{\R}[1]{\texthebrew{#1}}
+
+% Use fancyhdr to make all page numbers uniform
+\pagestyle{fancy}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyfoot[C]{$\thepage$}
+
+% Displaystyle for fractions and combinations
+\newcommand*{\disfrac}[2]{\displaystyle\frac{#1}{#2}}
+\newcommand*{\dischoose}[2]{\displaystyle{#1 \choose #2}}
+
+\newcommand*{\bover}[1]{\bm{\overline{#1}}}
+\newcommand*{\erh}[1]{\renewcommand{\arraystretch}{#1}}
+
+% Reduce space around c column in eqnarray*
+\newenvironment{eqn}
+  {\addtolength{\arraycolsep}{-3pt}\begin{eqnarray*}}
+  {\end{eqnarray*}}
+  
+% Reduce space around c column in eqnarray with labels
+\newenvironment{eqnlabels}
+  {\addtolength{\arraycolsep}{-3pt}
+   \begin{eqnarray}}
+  {\end{eqnarray}}
+
+% Use english equation numbers in hebrew document
+\renewcommand{\theequation}{\L{\arabic{equation}}}
+
+% Allow pages with larger floats
+\renewcommand{\floatpagefraction}{.8}
+
+% Layout
+\textwidth=155mm
+\textheight=230mm
+\topmargin=0pt
+\headheight=0pt
+\oddsidemargin=0mm
+\evensidemargin=0mm
+\headsep=0pt
+\parindent=0pt
+\renewcommand{\baselinestretch}{1.1}
+\setlength{\parskip}{0.3\baselineskip plus 1pt minus 1pt}
+
+%\includeonly{}
+
+\begin{document}
+\include{front}
+\include{het}
+\include{zayin}
+\include{vav}
+\include{heh}
+\include{daled}
+\include{recommendations}
+\end{document}
