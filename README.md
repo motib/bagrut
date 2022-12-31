@@ -9,7 +9,7 @@ Fifteen fully solved Israeli matriculation exams in mathematics (806/581) from t
 
 Solutions for problems in probability
 -------------------------------------
-A rewritten and expanded version of the problems in probability from each exam.
+An improved version of the problems in probability from each exam, expanded to include the problems from 2019-2022.
 
 Geometry theorems
 -----------------

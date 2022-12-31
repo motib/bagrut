@@ -39,12 +39,11 @@
 \renewcommand{\footrulewidth}{0pt}
 \fancyfoot[C]{$\thepage$}
 
-% Displaystyle for fractions and combinations
+% Styles for fractions and combinations
 \newcommand*{\disfrac}[2]{\displaystyle\frac{#1}{#2}}
+\newcommand*{\tfrac}[2]{\textstyle\frac{#1}{#2}}
 \newcommand*{\dischoose}[2]{\displaystyle{#1 \choose #2}}
-
-\newcommand*{\bover}[1]{\bm{\overline{#1}}}
-\newcommand*{\erh}[1]{\renewcommand{\arraystretch}{#1}}
+\newcommand*{\tchoose}[2]{\tstyle{#1 \choose #2}}
 
 % Reduce space around c column in eqnarray*
 \newenvironment{eqn}
@@ -75,7 +74,7 @@
 \renewcommand{\baselinestretch}{1.1}
 \setlength{\parskip}{0.3\baselineskip plus 1pt minus 1pt}
 
-%\includeonly{bet}
+%\includeonly{}
 
 \begin{document}
 \include{front}
