@@ -174,7 +174,7 @@ P(N=2)={4\choose 2}\left(\frac{1}{3}\right)^2\left(\frac{2}{3}\right)^2=\frac{24
 \textbf{סעיף ב}
 
 נטע מנצחת במשחק אם היא מנצחת בארבעה סיבובים או שיש תיקו ואחכ כך היא מנצחת בשניים מתוך שלושה סיבובים. נשתמש בתוצאות של סעיף א ונקבל:
-\begin{eqnarray*}
+\begin{eqn}
 P(M)&=&\frac{1}{9}+\frac{8}{27}
   \left[{3\choose 2}\left(\frac{1}{3}\right)^2\left(\frac{2}{3}\right)^1  +
   {3\choose 3}\left(\frac{1}{3}\right)^3\left(\frac{2}{3}\right)^0
@@ -182,7 +182,7 @@ P(M)&=&\frac{1}{9}+\frac{8}{27}
   &=&\frac{1}{9}+\frac{8}{27}
   \left[ \frac{6}{27} + \frac{1}{27} \right]=
   \frac{81}{729}+\frac{56}{729}=\frac{137}{729}\,.
-\end{eqnarray*}
+\end{eqn}
 
 \textbf{סעיף ג}
 
@@ -199,7 +199,7 @@ $1$
 את המאורע שנטע מנצחת רק באחד משני המשחקים ונשמתש בעובדה ש-%
 $(\overline{N1}\cup N2) \subseteq 1$,
 כי ניצחון של נטע רק במשחק בשני הוא אחד המקרים של נטע מנצחת רק במשחק אחד. נחשב את ההסתברות המבוקשת:
-\begin{eqnarray*}
+\begin{eqn}
 P(\overline{N1}\cup N2) / 1) &=& 
 \frac{P((\overline{N1}\cup N2) \cap 1)}{P(1)}\\
 &=& \frac{P(\overline{N1})P(N2)}
@@ -207,7 +207,7 @@ P(\overline{N1}\cup N2) / 1) &=&
 &=&\frac{\disfrac{8}{9}\cdot \frac{137}{729}}
 {\disfrac{8}{9}\cdot \frac{137}{729}+\disfrac{1}{9}\cdot \frac{592}{729}}\\[8pt]
 &=&\frac{8\cdot 137}{8\cdot 137+592}=\frac{1096}{1688}=0.6493\,.
-\end{eqnarray*}
+\end{eqn}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -242,10 +242,10 @@ $P(M)$
 $Y$.
 
 המילה "ידוע" מכוון להסתברות מותנית:
-\begin{eqnarray*}
+\begin{eqn}
 P(B/M)&=&\frac{P(B\cap M)}{P(M)}=0.90\\
 P(B\cap M)&=&0.90 P(M)=0.90Y\,.
-\end{eqnarray*}
+\end{eqn}
 כעת ניתן למלא את כל תאי הטבלה:
 \begin{center}
 \selectlanguage{english}
@@ -271,12 +271,12 @@ P(B\cap M)&=&0.90 P(M)=0.90Y\,.
 \end{center}
 
 מהעומדות של הבגרות נקבל שתי משוואות:
-\begin{eqnarray*}
+\begin{eqn}
 0.90Y+X&=&0.80\\
 X+1-Y-X&=&0.20\\
 Y&=&0.80\\
 X&=&0.08\,.
-\end{eqnarray*}
+\end{eqn}
 ניתן למלא אל כל התאים במספרים:
 \begin{center}
 \begin{tikzpicture}[scale=1.25]
@@ -334,10 +334,10 @@ $M,\overline{B}$
 $\overline{M},B$.
 נמצא בחישוב את הביטוי המבוקש ל-%
 $P(M\cap\overline{B})$:
-\begin{eqnarray*}
+\begin{eqn}
 P(M) P(\overline{B})&=&P(M\cap\overline{B})=
 P(\overline{M}\cap B)=P(\overline{M})P(B)\\
 P(M)(1-a)&=&(1-P(M))a\\
 P(M)&=&a\\
 P(M\cap\overline{B})&=&P(M)P(\overline{B})=a(1-a)=a-a^2\,.
-\end{eqnarray*}
+\end{eqn}

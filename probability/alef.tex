@@ -17,32 +17,24 @@ $HG$ \L{(hatzi gmar)}
 
 \textbf{סעיף א}
 
-נתון ש-%
-$P(M1 \cap M2)=P(M1)P(M2)=0.28$.
-נשים לב שאם משתתף עבר את שני המכשולים הראשונים, ההסתברות שהוא יעלה לחצי הגמר שווה להתסתברות שהוא יעבור את המכשולים שלישי. לכן ניתן לחשב את ההסתברות המבוקשת כך:
-\begin{eqnarray*}
-P(HG)&=& P(M1\cap M2 \cap M3) = P(M1)P(M2)P(M3)\\
-P(\overline{HG})&=& P(M1\cap M2 \cap \overline{M3}) = P(M1)P(M2)P(\overline{M3})\\
+לפי ההנחה שהצלחה לעבור מכשול בלתי תלוי במכשולים האחרים, ההסתברות לעבור סדרה של מכשולים היא המכפלה של ההסתברויות של המכשולים. נתון ש-%
+$P(M1)P(M2)=0.28$.
+אם משתתף עבר את שני המכשולים הראשונים, ההסתברות שהוא יעלה לחצי הגמר שווה להתסתברות שהוא יעבור את המכשול השלישי:
+\begin{eqn}
 P(M3)&=&3(1-P(M3))\\
 P(M3)&=&0.25\\
 P(HG)&=&P(M1)P(M2)P(M3)=0.28\cdot 0.25=0.07\,.
-\end{eqnarray*}
+\end{eqn}
 
 \textbf{סעיף ב}
 
 נתון
 $P(M1)P(\overline{M2})=0.42$
-שמצטרף לנתון
-$P(M1)P(M2)=0.28$.
-ביחד:
-\begin{eqnarray*}
-P(M1)P(\overline{M2})&=&0.42\\
-P(M1)P(M2)&=&0.28\\
-P(M1)&=&0.42+0.28=0.70\\
-P(\overline{M1})&=&0.30\,,
-\end{eqnarray*}
-כאשר אנו משתמש ב-%
-$P(M2)+P(\overline{M2})=1$.
+ולפי הסתברות שלמה:
+\begin{eqn}
+P(M1)&=&P(M1)P(M2)+P(M1)P(\overline{M2})=0.28+0.42=0.70\\
+P(\overline{M1})&=&1-P(M1)=0.30\,.
+\end{eqn}
 
 \textbf{סעיף ג 1}
 
@@ -52,25 +44,21 @@ P(HG/M1)=\frac{P(HG\cap M1)}{P(M1)}=\frac{P(HG)}{P(M1)}=
 \frac{0.07}{0.70}=0.01\,,
 \]
 כאשר אנו משתמשים ב-%
-$M1 \subseteq HG$
-כי משתתף עולה לחצי הגמר רק אם רק עובר את המכשול הראשון.
+$HG \subseteq M1$
+כי משתתף עולה לחצי הגמר רק אם הוא עבר את כל המכשולים, קל וחומר  את המכשול הראשון.
 
-נסמן ב-%
-$HG3/M13$
-את ההסתברות המבוקשת. המילה "בדיוק" מכוון לנוסחת ברנולי, לכן:
+המילה "בדיוק" מכוונת לנוסחת ברנולי, לכן ההסתברות המבוקשת היא:
 \[
-P(HG3/M13)={3\choose 2}\left(0.10\right)^2\left(0.90\right)^1=0.027\,.
+{3\choose 2}\left(0.01\right)^2\left(0.90\right)^1=0.027\,.
 \]
 
 \textbf{סעיף ג 2}
 
 נסמן ב-%
 $O,G,L$
-את המאורע שעומר, גל וליאור יעלו לחצי הגמר. השאלה שואלת על שני משתתפים מסויימים מתוך שלושה שנבחרו באקראי, ולכן אין צורך לצרף
-${3\choose 2}$
-לחישוב ההסתברות:
+את המאורעות שעומר, גל וליאור יעלו לחצי הגמר. נניח כרגיל שההצלחות של המשתתפים בלתי-תלויות:
 \[
-P(O\cap G \cap \overline{L}) = P(O)P(G)P(\overline{L}) =
+P(O)P(G)P(\overline{L}) =
 \left(0.10\right)\left(0.90\right)\left(0.10\right)=0.009\,.
 \]
 
@@ -82,18 +70,18 @@ P(O\cap G \cap \overline{L}) = P(O)P(G)P(\overline{L}) =
 
 \begin{center}
 \selectlanguage{english}
-\includegraphics[width=.9\textwidth]{summer-2021a-3}
+\includegraphics[width=\textwidth]{summer-2021a-3}
 \end{center}
 
-כרגיל הסתבכתי בהבנת הניסוח: "מן המורים" וגם "מכלל המשתתפים" מכוונים להסתברות מותנית. כמו כן, הפסיק ב-"מכלל המשתתפים (מורים ותלמידים), שנבדקו לגילוי קורונה" הוא מקור לאי-הבנה, כי "מכלל המשתתפים" מתייחס ל-%
-\textbf{כולם}
-בסקר ולא מברור מה הכוונה של הפסקה "שנבקו 
-$\ldots$".
-ללא הפסיק ברור באיזו קבוצה מדובר.
+הפסקאות "מן המורים" ו-"מכלל המשתתפים" אינן מכוונות להסתברות מותנית, כי הן מתייחסות לכל הקבוצה של המורים וכל הקבוצה של המשתתפים. הפסיק ב-"מכלל המשתתפים (מורים ותלמידים), שנבדקו לגילוי קורונה" מבלבל כי אפשר לפרש שהנתון הוא
+$13/15$
+"מכלל המשתתפים בסקר".
 
 נסמן ב-%
 $M$ \L{(moreh)}
-את המאורע של מורה שנסקר בסקר. אין צורך לסמן תלמיד כי המשפט השני בשאלה מפרט כל משתתף שלא מורה הוא תלמיד. נסמן ב-%
+את המאורע של מורה שנסקר בסקר, ואז
+$\overline{M}$
+הוא המאורע של תלמיד שנסקר בסקר. נסמן ב-%
 $N$ \L{(nivdak)}
 את המאורע של נבדק לקורונה.
 
@@ -102,17 +90,17 @@ $N$ \L{(nivdak)}
 יש שני סוגים של מאורעות ולכן הארגן את המידע בטבלה. 
 
 תחילה נחשב:
-\begin{eqnarray*}
+\begin{eqn}
 P(\overline{M})&=&1-P(M)=9P(M)\\
 P(M)&=&0.10\,.
-\end{eqnarray*}
+\end{eqn}
 נתון ש:
 \[
 P(N/M)=\frac{P(N\cap M)}{P(M)}=0.80\,,
 \]
 ולכן:
 \[
-P(N\cap M) = 0.80P(M)=0.80\cdot 0.10=0.08\,.
+P(N\cap M) = 0.80P(M)=0.08\,.
 \]
 את התוצאות הללו נכניס לתאים בטבלה תוך הוספת הסתברויות משלימות:
 \begin{center}
@@ -141,11 +129,11 @@ P(N\cap M) = 0.80P(M)=0.80\cdot 0.10=0.08\,.
 P(\overline{M}/N)=\frac{P(\overline{M}\cap N)}{P(N)}=\frac{13}{15}\,.
 \]
 נשתמש בהסתברויות משלימות ונקבל:
-\begin{eqnarray*}
+\begin{eqn}
 P(N)&=&P(M\cap N)+P(\overline{M}\cap N)\\[6pt]
 &=&0.08+\frac{13}{15}P(N)\\
 P(N)&=&0.60\,.
-\end{eqnarray*}
+\end{eqn}
 נמלא את שאר התאים בטבלה ונמצא את התשובה:
 \[
 P(\overline{M}\cap \overline{N})=0.38\,.
@@ -174,40 +162,41 @@ P(\overline{M}\cap \overline{N})=0.38\,.
 
 \textbf{סעיף ב}
 
-הניסוח "בזה אחר זה" מכוון לנוסחת ברנולי. נקצר את הסימון 
+הניסוח "בזה אחר זה" מכוון להתפלגות בינומית. נקצר את הסימון 
 $P(N)$
 ל-%
 $p$
-ולפי סעיף א ערכו 
-$0.60$.
+ולפי סעיף א 
+$p=0.60$.
 לפחות ארבעה משתתפים שקול לארבעה או חמישה משתתפים:
-\begin{eqnarray*}
+\begin{eqn}
 P(N\geq 4) &=& {5 \choose 4}p^4(1-p)^1+{5 \choose 5}p^5(1-p)^0\\
-&=& 5\cdot 0.60^4\cdot 0.40 + 0.60^5\\
-&=& 0.2592+0.0778=0.3370\,.
-\end{eqnarray*}
+&=& 5\cdot 0.60^4\cdot 0.40 + 0.60^5=0.3370\,.
+\end{eqn}
 
 \textbf{סעיף ג}
 
 המילה "ידוע" מכוון להסתברות מותנית. ברור ש-%
-$N\geq 1\subseteq N\geq 4$:
-\begin{eqnarray*}
-P(N\geq 4 / N\geq 1)&=&\frac{P(N\geq 4 \cap N\geq 1)}{P(N\geq 1)}=\frac{P(N\geq 4)}{P(N\geq 1)}=\frac{P(N\geq 4)}{1-P(N=0)}\\
+$N\geq 4\subseteq N\geq 1$
+ולכן:
+\begin{eqn}
+P(N\geq 4 / N\geq 1)&=&\frac{P((N\geq 4) \cap (N\geq 1))}{P(N\geq 1)}=\frac{P(N\geq 4)}{P(N\geq 1)}=\frac{P(N\geq 4)}{1-P(N=0)}\\[6pt]
 &=& \frac{0.3370}{1-(1-p)^5}=\frac{0.3370}{0.9898}=0.3404\,.
-\end{eqnarray*}
+\end{eqn}
 
 \textbf{סעיף ד}
 
-נסמן ב-%
-$A$
-את המאורע שהמשתתף האחרון נבחר נבדק לקורונה. כעת יש לחשב את ההסתברות שבדיוק אחד מתוך ארבעה נבדקו שנסמן
-$N41$.
-נחשב:
-\begin{eqnarray*}
-P(N41A / N= 2)&=& \frac{P(N41A \cap N=2)}{P(N=2)}= \frac{P(N41A)}{P(N=2)}\\
-&=&\frac{{4\choose 1}p^1(1-p)^3\cdot p}{{5\choose 2}p^2(1-p)^2}\\
-&=&\frac{4\cdot 0.60\cdot 0.40^3\cdot 0.60}{10\cdot 0.60^2\cdot 0.40^3}=\frac{4}{10}\,.
-\end{eqnarray*}
+עלינו לחשב את ההסתברות של המאורע: בדיוק אחד מתוך ארבעה המשתתפים הראשונים שנבחרו נבדקו וגם שהמשתתף האחרון שנבחר נבדק. נסמן מאורע זה ב-%
+$N_{4A}$,
+ונשים לב ש-%
+$N_{4A}\subseteq (N=2)$
+כי לפי ההגדרה
+$N_{4A}$
+היא דרך אחת לקבל בדיוק שני נצחונות. "ידוע" מכוון להסתברות מותנית:
+\begin{eqn}
+P(N_{4A} / (N= 2))&=& \frac{P(N_{4A} \cap (N=2))}{P(N=2)}= \frac{P(N_{4A})}{P(N=2)}\\[10pt]
+&=&\frac{{4\choose 1}p^1(1-p)^3\cdot p}{{5\choose 2}p^2(1-p)^2}=\frac{4}{10}\,.
+\end{eqn}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -227,11 +216,11 @@ $L$ \L{(lavan)}
 את המאורע של פרח לבן וב-%
 $S$ \L{(segol)}
 את המאורע של פרח סגול. מהנתון ניתן לחשב את ההסתברות המבוקשת:
-\begin{eqnarray*}
+\begin{eqn}
 P(L=2)&=&\frac{9}{4}P(S=2)\\[6pt]
 (1-P(S))^2&=&\left(\frac{3}{2}P(S)\right)^2\\[6pt]
 P(S)&=&\frac{2}{5}=40\%\,,
-\end{eqnarray*}
+\end{eqn}
 כאשר השתמשנו בהנחה שהבחירות של שני פרחים בלתי תלויות ובעובדה שהסתברויות משלימות.
 
 \textbf{סעיף ב}
@@ -245,12 +234,12 @@ $P(G/L)$
 בלי לשים לב שאין כאן הסתברות מותנית, כי המידע שפרח הוא לבן לא תורם  מידע אם לפרח עלים גדולים. הפתרון פשוט מתקבל על ידי חישוב ההסתברות 
 $P(G)$
 וההסתברות המשלימה. עם המידע הנתון על הבחירות של ירדן, ההסתברות המבוקשת היא:
-\begin{eqnarray*}
+\begin{eqn}
 P(G\overline{G})&=&{2\choose 1}P(G)^1(1-P(G))^1=0.455\\
 2P(G)^2 - 2P(G) + 0.455&=&0\\
 P(G)&=&\frac{2\pm\sqrt{0.36}}{4}=\frac{1\pm\frac{3}{10}}{2}\\
 &=&\frac{7}{20},\,\frac{13}{20}=0.35\,,0.65\,.
-\end{eqnarray*}
+\end{eqn}
 אבל אחוז הפרחים עם עלים גדולים לא יכול להיות גבוה יותר ממספר הפרחים הלבנים
 $0.6$,
 ולכן
@@ -265,10 +254,10 @@ $P(1G)=0.455$.
 החישוב יהיה קל יותר אם נשים לב ש-%
 $0.455=0.35\cdot 1.3=\frac{7}{20}\cdot \frac{13}{10}$.
 המילה "ידוע" מכוון להסתברות מותנית:
-\begin{eqnarray*}
+\begin{eqn}
 P(S=1/1G)&=&\frac{P(S=1 \cap 1G)}{P(1G)}=\frac{{2\choose 1}P(S)P(G)}{P(1G)}\\
 &=&\frac{2\cdot\frac{4}{10}\frac{7}{20}}{\frac{7}{20}\frac{13}{10}}=\frac{8}{13}\,.
-\end{eqnarray*}
+\end{eqn}
 
 \textbf{סעיף ג 2}
 
@@ -329,12 +318,12 @@ $y=P(H\cap M)$.
 \end{tikzpicture}
 \end{center}
 המילה "ידוע" מכוון להסתברות מותנית ונשתמש ביחס הנתון:
-\begin{eqnarray*}
+\begin{eqn}
 1.5P(H/M)&=&P(\overline{M}/H)\\[4pt]
 \frac{1.5P(H\cap M)}{P(M)}&=&\frac{P(\overline{M}\cap H)}{P(H)}\\[4pt]
 \frac{1.5y}{x}&=&\frac{P(\overline{M}\cap H)}{2x}\\[4pt]
 P(\overline{M}\cap H)&=&3y\,.
-\end{eqnarray*}
+\end{eqn}
 צירפנו ערך זה לטבלה. מהעמודה
 $H$
 מתקבל
@@ -388,10 +377,10 @@ P(\overline{H}\cap \overline{M})=1-\left(\frac{x}{2}+\frac{x}{2}+\frac{3x}{2}\ri
 במילה "לפחות" מכוונת לנוסחת ברנולי. נסמן
 $p=P(H\cap M)$
 ונחשב:
-\begin{eqnarray*}
+\begin{eqn}
 P(p\geq 3) = P(p=3 \cup p=4)&=& {4\choose 3}p^3(1-p)^1+{4\choose 4}p^4(1-p)^0\\[6pt]
 &=&4\cdot 0.0009 + 0.0001 = 0.0037\,.
-\end{eqnarray*}
+\end{eqn}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -401,37 +390,42 @@ P(p\geq 3) = P(p=3 \cup p=4)&=& {4\choose 3}p^3(1-p)^1+{4\choose 4}p^4(1-p)^0\\[
 
 \begin{center}
 \selectlanguage{english}
-\includegraphics[width=.85\textwidth]{winter-2021nv-3}
+\includegraphics[width=\textwidth]{winter-2021nv-3}
 \end{center}
 
 נסמן ב-%
-$M$ \L{(muzik)}
+$M$ \L{(muzika)}
 את המאורע של צופים במוזיקה ונסמן ב-%
 $S$ \L{(sport)}
 את המאורע של צופים בספורט. השאלה שואלת על שני סוגים של מאורעות ולכן נארגן את המידע בטבלה.
 
 מהנתון הראשון ניתן לחשב את
 $P(M)$:
-\begin{eqnarray*}
+\begin{eqn}
 P(M)&=&1.5P(\overline{M})=1.5 (1-P(M))\\
 P(M)&=&3/5\,.
-\end{eqnarray*}
-מהנתונים הבאים ניתן לחשב את
+\end{eqn}
+בשני המשפטים הבאים, "מן הלקוחות" מכוון להסתברות מותנית:
+\begin{eqn}
+P(M/S)&=&\frac{P(M\cap S)}{P(S)}=2/3\\[4pt]
+P(M\cap S)&=&(2/3)P(S)\\[4pt]
+P(M/\overline{S})&=&\frac{(M\cap \overline{S})}{P(\overline{S})}=2/5\\[4pt]
+P(M\cap \overline{S})&=&(3/5)P(\overline{S})\,.
+\end{eqn}
+נשתמש בהסתברות שלמה כדי לחשב את 
 $P(S)$:
-\begin{eqnarray*}
-P(M/S)&=&\frac{P(M\cap S)}{P(S)}=2/3\\
-P(M/\overline{S})&=&\frac{(M\cap \overline{S})}{P(\overline{S})}=2/5\\
+\begin{eqn}
 P(M)&=&P(M\cap S)+P(M\cap \overline{S})=3/5\\
-(2/3)P(S)+(2/5)[1-P(S)]&=&3/5\\
+&=&(2/3)P(S)+(2/5)P(\overline{S})=3/5\\
 P(S)&=&3/4\,.
-\end{eqnarray*}
-ניתן לחשב את
+\end{eqn}
+לאחר שנחשב את
 $P(M\cap S)$
 ו-%
 $P(M\cap \overline{S})$
 מ-%
-$P(S)$.
-נסכם בטבלה לאחר מילוי הסתברויות משלימות:
+$P(S)$,
+נוכל למלא אתת הטבלה:
 \begin{center}
 \begin{tikzpicture}[scale=1.25]
 \draw (0,0) grid[xstep=1.5] (4.5,3);
@@ -461,30 +455,34 @@ $P(M\cap S)=1/2$.
 
 \textbf{סעיף ב}
 
-המילא "או" מכוון לאיחוד של שני מאורעות. בעזרת תרשימי 
+המילא "או" מכוון לאיחוד של שני מאורעות. בעזרת תרשים
 \L{Venn}
-(עמוד~%
-\pageref{p.venn})
-מתקבל:
-\begin{eqnarray*}
-P(M\cup S) &=&P(M)+P(S)-P(M\cap S)\\[6pt]
-&=&\frac{3}{5}+\frac{3}{4}-\frac{1}{2}=\frac{17}{20}\\[6pt]
-P(\overline{M}/M\cup S)&=&\frac{P(\overline{M}\cap (M\cup S))}{P(M\cup S)}=\frac{P(S\cap \overline{M}}{P(M\cup S)}\\[6pt]
-&=&\frac{1/4}{17/20}=5/17\,.
-\end{eqnarray*}
+נקבל:
+\[
+P(M\cup S)=P(M)+P(S)-P(M\cap S)=\frac{3}{5}+\frac{3}{4}-\frac{1}{2}=\frac{17}{20}\,.
+\]
+ההמשך בהסתברות מותנית. הניסוח לא שגרתי אבל לא קשה: "נמצא שלקוח שנבחר ... מה ההסתברות 
+\textbf{שהוא}":
+\[
+P(\overline{M}/M\cup S)=\frac{P(\overline{M}\cap (M\cup S))}{P(M\cup S)}=\frac{P(S\cap \overline{M})}{P(M\cup S)}=\frac{1/4}{17/20}=5/17\,.
+\]
+ברור ש-%
+$M\cap\overline{M}$
+היא הקבוצה הריקה ולכן
+$\overline{M}\cap (M\cup S))=S\cap \overline{M}$.
 
 \textbf{סעיף ג}
 
 מהמידע בטבלה נחשב את ההסתברות שלבחור לקוח אחד כנדרש:
-\begin{eqnarray*}
-P(M/\overline{S})&=&\frac{M\cap\overline{S})}{P(S)}=\frac{1/10}{3/4}=\frac{2}{5}\,.
-\end{eqnarray*}
-"לפחות שניים" מכוון לנוסחת ברנולי:
-\begin{eqnarray*}
-P(M/\overline{S}\geq 2)&=&1-P(M/\overline{S}<2)\\
+\begin{eqn}
+P(M/\overline{S})&=&\frac{P(M\cap\overline{S})}{P(S)}=\frac{1/10}{3/4}=\frac{2}{5}\,.
+\end{eqn}
+"לפחות שניים" מכוון להתפלגות בינום, ונעדיף לחשב את ההסתברות המשלימה:
+\begin{eqn}
+P(M/\overline{S}\geq 2)&=&1-P(M/\overline{S}<2)\\[6pt]
 &=&1-{4\choose 0}\left(\frac{2}{5}\right)^0\left(\frac{3}{5}\right)^4-{4\choose 1}\left(\frac{2}{5}\right)^1\left(\frac{3}{5}\right)^3\\
-&=&1-\frac{81}{625}-\frac{216}{625}=\frac{328}{625}=0.5248\,.
-\end{eqnarray*}
+&=&\frac{328}{625}=0.5248\,.
+\end{eqn}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -494,22 +492,22 @@ P(M/\overline{S}\geq 2)&=&1-P(M/\overline{S}<2)\\
 
 \begin{center}
 \selectlanguage{english}
-\includegraphics[width=.85\textwidth]{winter-2021lt-3}
+\includegraphics[width=\textwidth]{winter-2021lt-3}
 \end{center}
 
 נסמן ב-%
-$A$ \L{(adom)}, $T$ \L{(tzahov)}, $K$ \L{(kahol)}
-את המאורעות של כדורים אדומים, צהובים וכחולים, בהתאמה. נתון
+$A$ \L{(adom)}, $T$ \L{(tzahov)}, $K$ \L{(kakhol)}
+את המאורעות של הוצאת כדורים אדומים, צהובים וכחולים, בהתאמה. נתון
 $P(A)=5/8$, $3P(T)=P(K)$.
 נסמן
 $x=P(K)$
-ולפי השורה התחתונה נוכל לחשב:
-\begin{eqnarray*}
-5/8+3x+x&=&1\\
-x&=&3/32\,.
-\end{eqnarray*}
-
-ונארגן את המידע בטבלה.
+ונסכם הסתברויות כדי לקבל את המשוואה
+\[
+5/8+3x+x=1\,,
+\]
+שפתרונה הוא
+$x=3/32$.
+נארגן את המידע בטבלה.
 \begin{center}
 \selectlanguage{english}
 \begin{tikzpicture}[scale=1.25]
@@ -530,21 +528,21 @@ x&=&3/32\,.
 \node at (1.8,1.5) {$$};
 \node at (0.6,1.5) {$$};
 
-\node at (4.2,0.5) {$\frac{5}{8}$};
-\node at (3,0.5) {$3x=\frac{9}{32}$};
-\node at (1.8,0.5) {$x=\frac{3}{32}$};
+\node at (4.2,0.5) {$5/8$};
+\node at (3,0.5) {$9/32$};
+\node at (1.8,0.5) {$3/32$};
 \node at (0.6,0.5) {$1$};
 \end{tikzpicture}
 \end{center}
 נסמן ב-%
-$M$ \L{(mehuspas)}
+$M$ \L{(mekhuspas)}
 את האירוע של כדור מחוספס. נתון:
-\begin{eqnarray*}
-P(M\cap A)&=&\frac{4}{5}P(A)=\frac{1}{2}\\[6pt]
-P(M\cap T)&=&\frac{8}{9}P(T)=\frac{1}{4}\,.
-\end{eqnarray*}
+\begin{eqn}
+P(M\cap A)&=&\frac{4}{5}\,P(A)=\frac{1}{2}\\[6pt]
+P(M\cap T)&=&\frac{8}{9}\,P(T)=\frac{1}{4}\,.
+\end{eqn}
 תחילה נראה לי שחסר נתון כדי להמשיך עד שקראתי בעיון את השאלה. הפסקה "כל שאר הכדורים חלקים" אומר ש-%
-$P(M\cap K=$
+$P(M\cap K)=0$
 וניתן למלא את כל התאים בטבלה עם הסתברויות משלימות:
 \begin{center}
 \selectlanguage{english}
@@ -576,23 +574,21 @@ $P(M\cap K=$
 \textbf{סעיף א}
 
 "בדיוק" מכוון לנוסחת ברנולי. ההסתברות היא:
-\begin{eqnarray*}
-P(M=3)&=&{8\choose 3}\left(\frac{3}{4}\right)^3
-\left(\frac{1}{4}\right)^5\\
-&=&56\cdot\frac{27}{4^8}=\frac{7\cdot 27}{8192}=
-\frac{189}{8192}=0.0231\,.
-\end{eqnarray*}
+\[
+P(M=3)={8\choose 3}\left(\frac{3}{4}\right)^3
+\left(\frac{1}{4}\right)^5=56\cdot\frac{27}{65536}=\frac{189}{8192}=0.0231\,.
+\]
 
 \textbf{סעיף ב 1}
 
-השליפות הן אחת אחרי השנייה ולכן נארגן את המידע בעץ כאשר בכל שלב אפשר לשלוף כדור בצבע מסויים. השליפה היא ללא החזרה ולכן ההסתברויות שונות בשליפה הראשונה והשנייה.
+השליפות הן אחת אחרי השנייה ולכן נארגן את המידע בעץ, כאשר בכל שלב אפשר לשלוף כדור בצבע מסויים. השליפה היא ללא החזרה ולכן ההסתברויות שונות בשליפה הראשונה והשנייה.
 \begin{center}
 \begin{tikzpicture}
 [grow=right,
-level 1/.append style={level distance=2cm,
+level 1/.append style={level distance=3cm,
                        sibling distance=6.5em},
-level 2/.append style={level distance=4cm,
-                       sibling distance=2.5em}]
+level 2/.append style={level distance=5cm,
+                       sibling distance=2em}]
 \node[left] {} % root
 child {
   node[right] {$\scriptstyle K$}
@@ -605,7 +601,7 @@ child {
       edge from parent node[below,near end] {$\scriptstyle 9/31$}
     }
     child {
-      node[right] {$\scriptstyle KA=KA$}
+      node[right] {$\scriptstyle KA=AK$}
       edge from parent node[above] {$\scriptstyle 20/31$}
     }
     edge from parent node[below,yshift=-2mm] 
@@ -648,37 +644,39 @@ child {
 \end{tikzpicture}
 \end{center}
 נסמן ב-%
-$S$ \L{(shone)}
+$S$ \L{(shoneh)}
 את המאורע שהכדורים בצבעים שונים:
-\begin{eqnarray*}
+\begin{eqn}
 P(S)=P(AT\cup AK \cup TK)&=&
 \frac{1}{32\cdot 31}
 (2\cdot 20\cdot 9 + 2\cdot 20\cdot 3 + 2\cdot 3\cdot 9))\\[6pt]
 &=&\frac{534}{992}=0.5383\,.
-\end{eqnarray*}
+\end{eqn}
 בדיעבד היה קל יותר לחשב את ההסתברות המשלימה לשליפת שני כדורים מאותו צבע!
 
 \textbf{סעיף ב 2}
 
-"ידוע" מכוון להסתברות מותנית:
-\begin{eqnarray*}
-P(A1/S)&=&\frac{P(A1\cap S)}{P(S)}=\frac{P(AT\cup AK)}{P(S)}\\
+נסמן ב-%
+$A_1$
+את המאורע שהכדור הראשון בצבע אדום. "ידוע" מכוון להסתברות מותנית:
+\begin{eqn}
+P(A_1/S)&=&\frac{P(A_1\cap S)}{P(S)}=\frac{P(AT\cup AK)}{P(S)}\\[12pt]
 &=&
-\frac{\frac{1}{32\cdot 31}(20\cdot 9 + \cdot 20\cdot 3)}
-{\frac{1}{32\cdot 31}(534)}=\frac{240}{534}=\frac{40}{89}=0.4494\,.
-\end{eqnarray*}
+\disfrac{
+\disfrac{20\cdot 9 +  20\cdot 3}{32\cdot 31\rule[-5pt]{0pt}{5pt}}
+}{
+\disfrac{\rule[5pt]{0pt}{5pt}534}{32\cdot 31}
+}=\frac{40}{89}=0.4494\,.
+\end{eqn}
 
 \textbf{סעיף ג}
 
-גם כאן היה לי קושי להבין מה רוצים כי "אין" שאלה בסעיף ג. הכוונה היא לשאול עבר איזה ערכים של 
-$n$
-אפשר לענות על הסעיפים הקודמים עם ההסתברויות הנתונות. צריך לשים לב שלמשל:
 $P(K)=3/32$
 ולכן מספר הכדורים הכחולים הוא
 $3n/32$.
-בהנחה הברורה שיש מספר שלם שלם כדורים כחולים הערכים ההאפשריים של 
+בהנחה הברורה שיש מספר שלם של כדורים כחולים, הערכים ההאפשריים של 
 $n$
 הם
 $32, 64, 96, 128,\ldots$.
-בטוו הנתון האפשריויות הם
+בטווח הנתון האפשריויות הם
 $64, 96$.

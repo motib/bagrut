@@ -45,17 +45,11 @@
 \newcommand*{\dischoose}[2]{\displaystyle{#1 \choose #2}}
 \newcommand*{\tchoose}[2]{\tstyle{#1 \choose #2}}
 
-% Reduce space around c column in eqnarray*
+% Reduce space around c column in eqn
 \newenvironment{eqn}
   {\addtolength{\arraycolsep}{-3pt}\begin{eqnarray*}}
   {\end{eqnarray*}}
   
-% Reduce space around c column in eqnarray with labels
-\newenvironment{eqnlabels}
-  {\addtolength{\arraycolsep}{-3pt}
-   \begin{eqnarray}}
-  {\end{eqnarray}}
-
 % Use english equation numbers in hebrew document
 \renewcommand{\theequation}{\L{\arabic{equation}}}
 
@@ -74,7 +68,7 @@
 \renewcommand{\baselinestretch}{1.1}
 \setlength{\parskip}{0.3\baselineskip plus 1pt minus 1pt}
 
-%\includeonly{}
+\includeonly{alef}
 
 \begin{document}
 \include{front}
